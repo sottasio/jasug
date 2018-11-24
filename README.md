@@ -22,4 +22,6 @@ Rules of the game:
  High score is saved in a file called "ufoscore.txt". Everytime a new game is loaded, hiscore will
  be displayed.
  
+ I have a record of 250 points. Can you do better?
+ 
 
