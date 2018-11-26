@@ -17,7 +17,7 @@ Rules of the game:
  - Every saucer, appears randomly on screen.
  - There is a wait time for the saucer to stay there. When the game starts, wait time is 3000ms (3 secs).
  - After 5 causers have been shot down, wait time reduces 20%.
- - If you miss to shut down 5 saucers in sequence, you lose!
+ - If you miss to shoot down 5 saucers in sequence, you lose!
  
  High score is saved in a file called "ufoscore.txt". Everytime a new game is loaded, hiscore will
  be displayed.
