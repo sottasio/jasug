@@ -8,7 +8,7 @@ This software was built with Java SE 7, Swing and Eclipse as an IDE.
 # Running this software
 In order to run this software, Java must be installed on your computer.
 Main class is Ufoshooting.java. 
-You must also contain the .jpg of ufo,player and bullet to load when the game starts.
+You must also contain the .jpg of ufo,player and bullet that are contained in folder "Images", in order to load when the game starts.
 # Use of this software
 Aim of the game is to score as much points as you can by shooting the flying saucer.
 
