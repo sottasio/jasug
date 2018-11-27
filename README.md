@@ -24,4 +24,6 @@ Rules of the game:
  
  I have a record of 250 points. Can you do better?
  
+ ![alt text](https://imgur.com/s4s5s9w)
+ 
 
