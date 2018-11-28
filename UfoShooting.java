@@ -82,9 +82,9 @@ public class UfoShooting extends JFrame {
 	        	   
 	              switch(evt.getKeyCode()) {
 	              
-	                 case KeyEvent.VK_LEFT:  p1.moveLeft();  break;
+	                 case KeyEvent.VK_LEFT:   p1.moveLeft();  break;
 	                 
-	                 case KeyEvent.VK_RIGHT: p1.moveRight(); break;
+	                 case KeyEvent.VK_RIGHT:  p1.moveRight(); break;
 	                 
 	                 case KeyEvent.VK_SPACE:  { 
 	                	                     b1.setXpos(p1.getXpos() + 30);
@@ -94,16 +94,21 @@ public class UfoShooting extends JFrame {
                          
                          case KeyEvent.VK_N : {
                           
-                         if (g1.isFinished()) {
-                          try {
-                              dispose();
-                              new UfoShooting();
-                          } catch (IOException ex) {
-                              Logger.getLogger(UfoShooting.class.getName()).log(Level.SEVERE, null, ex);
-                          }
-                         }
-                         }
-	              break;
+                             
+                             
+                                if (g1.isFinished()) {
+
+                                    g1.setFinished(false);
+                                    g1.loadPointsFromFile();
+                                    p1.setMissedUfos(0);
+                                    p1.setPoints(0);
+                                    u1.setStayTime(3000);
+                                    missedUfos = 0;
+                                    
+
+                                }
+                           }
+	                 break;
 	       	                                 
 	       	          
 	                 
@@ -216,6 +221,7 @@ public class UfoShooting extends JFrame {
 			   p1.setYpos(400);
 			   u1.setXpos(0);
 			   u1.setYpos(0);
+                           
 			   
 			   if(p1.getPoints() > g1.getMaxPoints()) {
                               
